@@ -58,21 +58,35 @@
         <h2 id="contacto">Formulario de contacto</h2> 
         <p>Deja tu información de contacto</p>
 
-        <form >
+        <form action="mailto:ja.caycedo@uniandes.edu.co" name="emailForm" method="POST">
           <p>
-             <label for="name">Name:</label>
-             <input type="text" id="name" name="user_name">
+             <label for="nombre">Nombre completo:</label>
+             <input type="text" id="nombre" name="nombre" required>
         </p>
           <p>
              <label for="mail">E-mail:</label>
-             <input type="email" id="mail" name="user_email">
+             <input type="email" id="mail" name="mail" requiered>
           </p>
           <p>
-             <label for="msg">Message:</label>
-             <textarea id="msg" name="user_message"></textarea>
+             <label for="num">Número de contacto:</label>
+             <input type="num" id="num" name="num" required></input>
+          </p>
+          <p>
+            <fieldset>
+              <legend> Marca lo que tengamos en común! :D</legend>
+              <input type="checkbox" id="vid" name ="vid" value="vid" unchecked>
+              <label for="vid"> Video Juegos</label>
+              <input type="checkbox" id="cine" name ="cine" value="cine" unchecked>
+              <label for="cine"> Cine</label>
+              <input type="checkbox" id="leer" name ="leer" value="leer" unchecked>
+              <label for="leer"> Leer</label>
+              <input type="checkbox" id="prog" name ="prog" value="prog" unchecked>
+              <label for="prog"> Programar</label>
+
+            </fieldset>
           </p>
             <p>
-              <button>Enviar  </button>
+              <button type="submit">Enviar  </button>
             </p>
          </form>
       </main>
